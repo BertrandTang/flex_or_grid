@@ -1,5 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
     box-sizing: border-box;
+}
+
+html {
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -96,4 +103,110 @@ span {
 #span4 {
     grid-column: span 2;
     grid-row: span 2;
+}
+
+.service_list_card {
+    display: flex;
+    gap: 3rem
+}
+
+.service_card {
+    display: flex;
+    flex-direction: column;
+    border: solid 4px #3A86FF;
+    border-radius: 10px;
+    padding: 2rem;
+    height: 700px;
+    grid-row: span 2;
+    width: 50%;
+}
+
+.service_card h2, .service_rh_card  h2 {
+    margin-bottom: 5rem;
+    font-weight: 600;
+    color: #3A86FF;
+}
+
+.service_lines_list {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.service_line {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 2px #3A86FF;
+    color: #E06E3C;
+    padding: 1rem;
+}
+
+.service_lines_list li:first-child {
+    color: white;
+    background-color: #3A86FF;
+}
+
+.results_and_button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #3A86FF;
+}
+
+.results_and_button button {
+    background-color: #3A86FF;
+    border: none;
+    padding: 1rem;
+    color: white;
+    border-radius: 5px;
+}
+
+.service_rh_card {
+    display: flex;
+    flex-direction: column;
+    border: solid 4px #3A86FF;
+    border-radius: 10px;
+    padding: 2rem;
+    height: 700px;
+    width: 50%;
+    height: 50%;
+}
+
+.service_rh_lines_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.service_rh_line {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    color: #E06E3C;
+    padding: 1rem;
+}
+
+.buttons_rh_line {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.buttons_rh_line button {
+    height: 30px;
+    width: 200px;
+}
+
+#rh_delete_button {
+    border: none;
+    background-color: #FF7070;
+    border-radius: 10px;
+    color: white;
+}
+
+#rh_add_button {
+    border: none;
+    background-color: #3A86FF;
+    border-radius: 10px;
+    color: white;
 }

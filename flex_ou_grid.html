@@ -12,20 +12,22 @@
 <body>
     <nav>
         <img src="/flex_ou_grid/public/Ararat-colored.svg" alt="logo" />
-        <ul alt="links list">
+        <ul>
             <li>home</li>
             <li>projects</li>
             <li>contact</li>
         </ul>
     </nav>
-    <section alt="justification">
+    <section class="justification_atelier_1">
         <h1>Justification Atelier 1</h1>
         <p>La barre de nav est en flexbox car c'est plus simple et ne nécessite pas un formatage que le grid offre (en d'autre terme, ça aurait été overkill d'utiliser un grid pour la barre de nav).</p>
     </section>
-    <section class="card_section">
+    <section class=" card_section">
         <h1>Justification Atelier 2</h1>
-        <p>Le grid est plus efficace ici avec les cards car on veut un affichage uniforme et qui ne risque pas de se casser. Avec flexbox, il faudrait plus de ligne de codes pour arriver à ce résultat (gérer les cas où la ligne du dessous n'est pas complètement alignée car il y a moins de cartes par exemple).</p>
-        <ul alt="card list">
+        <p>Le grid est plus efficace ici avec les cards car on veut un affichage uniforme et qui ne risque pas de se
+            casser. Avec flexbox, il faudrait plus de ligne de codes pour arriver à ce résultat (gérer les cas où la
+            ligne du dessous n'est pas complètement alignée car il y a moins de cartes par exemple).</p>
+        <ul>
             <li class="card">
                 <img src="/flex_ou_grid/public/ectoplasma.png" alt="img ectoplasma" />
                 <p>
@@ -44,8 +46,8 @@
                     repudiandae exercitationem corrupti magni laborum nostrum?
                 </p>
                 <div class="info">
-                <h2>Hyporoi</h2>
-                <a href="#">+</a>
+                    <h2>Hyporoi</h2>
+                    <a href="#">+</a>
                 </div>
             </li>
             <li class="card">
@@ -97,14 +99,67 @@
             <li class="item" id="span_2_horizontal"><img src="/flex_ou_grid/public/atelier_3_img/324.png" alt=""></li>
             <li class="item"><img src="/flex_ou_grid/public/atelier_3_img/35.png" alt=""></li>
             <li class="item"><img src="/flex_ou_grid/public/atelier_3_img/416.png" alt=""></li>
-            <li class="item"  id="span4"><img src="/flex_ou_grid/public/atelier_3_img/421.png" alt=""></li>
+            <li class="item" id="span4"><img src="/flex_ou_grid/public/atelier_3_img/421.png" alt=""></li>
             <li class="item"><img src="/flex_ou_grid/public/atelier_3_img/426.png" alt=""></li>
             <li class="item"><img src="/flex_ou_grid/public/atelier_3_img/555.png" alt=""></li>
             <li class="item"><img src="/flex_ou_grid/public/atelier_3_img/627.png" alt=""></li>
             <li class="item"><img src="/flex_ou_grid/public/atelier_3_img/631.png" alt=""></li>
         </ul>
     </section>
-
+    <section class="rh_section">
+        <h1>Justification Atelier 4</h1>
+        <ul class="service_list_card">
+            <li class="service_card">
+                <h2>Services</h2>
+                <ul class="service_lines_list">
+                    <li class="service_line">
+                        <h3>RH</h3>
+                        <p>100h restantes</p>
+                    </li>
+                    <li class="service_line">
+                        <h3>RH</h3>
+                        <p>100h restantes</p>
+                    </li>
+                    <li class="service_line">
+                        <h3>RH</h3>
+                        <p>100h restantes</p>
+                    </li>
+                    <li class="service_line">
+                        <h3>RH</h3>
+                        <p>100h restantes</p>
+                    </li>
+                    <li class="service_line">
+                        <h3>RH</h3>
+                        <p>100h restantes</p>
+                    </li>
+                    <li class="service_line">
+                        <h3>RH</h3>
+                        <p>100h restantes</p>
+                    </li>
+                </ul>
+                <div class="results_and_button">
+                    <p>7 résultats</p>
+                    <button type="submit">Ajouter un service</button>
+                </div>
+            </li>
+            <li class="service_rh_card">
+                <h2>Service : RH</h2>
+                <ul class="service_rh_lines_list">
+                    <li class="service_rh_line">
+                        <a href="mailto:rh@service.fr">rh@service.fr</a>
+                        <img src="/flex_ou_grid/public/atelier_4_img/001-mail.png" alt="email_icon">
+                    </li>
+                    <li class="service_rh_line">
+                        <p>100 heures restantes</p>
+                        <img src="/flex_ou_grid/public/atelier_4_img/002-hourglass.png" alt="hourglass_icon">
+                    </li>
+                    <li class="buttons_rh_line">
+                        <button type="submit" id="rh_delete_button">Supprimer</button>
+                        <button type="submit" id="rh_add_button">Ajouter un utilisateur</button>                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
 </body>
 
 </html>
