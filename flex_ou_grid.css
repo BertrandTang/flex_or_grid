@@ -186,6 +186,10 @@ span {
     padding: 1rem;
 }
 
+.service_rh_line a{
+    color: #E06E3C;
+}
+
 .buttons_rh_line {
     display: flex;
     justify-content: flex-end;
