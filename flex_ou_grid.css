@@ -36,10 +36,16 @@ nav ul li {
     margin: 1rem;
 }
 
+section .justification_comment  {
+   font-size: 1.5rem; 
+   padding: 2rem;
+}
+
 .card_section ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 2rem;
+    padding: 3rem;
 }
 
 .card {
@@ -55,6 +61,13 @@ nav ul li {
 .card img {
     width: 300px;
 }
+
+/* .card p {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 200px;
+    text-overflow:ellipsis;
+} */
 
 .info {
     width: 100%;
@@ -78,6 +91,7 @@ span {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 10px;
+    padding: 5rem;
 }
 
 .item {
@@ -103,6 +117,10 @@ span {
 #span4 {
     grid-column: span 2;
     grid-row: span 2;
+}
+
+.rh_section {
+    padding: 4rem;
 }
 
 .service_list_card {
@@ -214,3 +232,63 @@ span {
     border-radius: 10px;
     color: white;
 }
+
+.invoices_section{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.invoices_cardlist {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+}
+
+.invoice_info_lines {
+    border: solid 2px #3A86FF;
+    display: flex;
+    justify-content: space-between;
+    padding:2rem;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.invoice_info_lines li {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.invoice_info_lines li:nth-child(1){
+font-size: 1.5rem;
+color: #3A86FF;;
+font-weight: 800;
+}
+
+.invoice_info_lines li:nth-child(2){
+    font-size: 1.5rem;
+    color: #3A86FF;
+    }
+
+    .invoice_info_lines li:nth-child(3){
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: #3A86FF;
+        }
+
+        .invoice_info_lines  li:nth-child(4){
+            color: #5CBE7D;
+            background-color: #C4FFD8;
+            padding: 1rem;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 1.3rem;
+            width: 100px;
+            height: 50px;
+        }
+
+        .invoice_info_lines li:nth-child(4).pending{
+            color: #F1AE00;
+            background-color: #FFEEC4;
+        }
